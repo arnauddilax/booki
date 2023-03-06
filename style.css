@@ -1,18 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
 
-
-main {
-    margin: 10px 50px 50px;
+* {
+    font-family: 'Raleway', sans-serif;
 }
 
 body {
-    margin: 0;
-    font-family: 'Raleway';
+    margin: 10px 30px 10px;
+    font-family: 'Raleway, sans-serif';
+    display: flex;
+    justify-content: left;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 20px 0px;
+}
+
+.info-group {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
 }
 
 header img {
-    width: 96px;
-    height: 45px;
+    width: 61px;
+    height: 19px;
+    left: 30px;
+    top: 30px
 }
 
 nav {
@@ -25,22 +42,99 @@ nav {
 nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0px;
 }
 
+ul {
+    list-style-type: none;
+}
 
 nav li a {
     text-decoration: none;
     color: black;
-    padding: 11px 25px 0 25px;
+    padding: 10px 25px 0 25px;
 }
 
 nav li a:hover {
     color: #0065FC;
     border-top: 2px #0065FC solid;
+}
 
+.headline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 20px 0px;
 }
 
 h1 {
     font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
 }
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/* formulaire de recherche */
+
+.search {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+    border-radius: 15px;
+    margin: 10px 50px 10px;
+}
+
+.searchIcon {
+    height: 50px;
+    width: 50px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0 0 15px;
+    align-self: flex-start;
+    color: black;
+}
+
+.searchInputButton {
+    height: 50px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f2f2f2;
+    padding-left: 5px;
+    height: 50px;
+}
+
+.searchButton {
+    width: 130px;
+    font-weight: 600;
+    background-color: #0065FC;
+    border: none;
+    padding: 0;
+    border-radius: 0 15px 15px 0;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 110%;
+    cursor: pointer;
+    flex-shrink: 0;
+    height: 50px;
+}
+
+.searchButton:hover {
+    background-color: #3586ff;
+}
+

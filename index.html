@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
-<html>
+
 <head>
-   <title></title>
-   <link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booki</title>
+
+   <link rel="stylesheet" type="text/css" href="css/style.css">
    
    <link rel="preconnect" href="https://fonts.googleapis.com" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,30 +18,45 @@
 		rel="stylesheet" />
 	<link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet" />
 </head>
+
+
 <body>
-
-   <main>
-
+	<section class="info-group">
       <header>
 			<nav>
-				<img src="images/logo/Booki.png" alt="Logo de Booki" id="logoBooki"
-					title="Avec Booki, moins de soucis!">
+				<img src="images/logo/Booki.png" alt="Booki">
 
 				<ul>
-					<li><a href="#accomodations">Hébergements</a></li>
-					<li><a href="#activities">Activités</a></li>
+					<li><a href="#hebergements">Hébergements</a></li>
+					<li><a href="#activites">Activités</a></li>
 				</ul>
 
 			</nav>
-			<h1>
-				Trouvez votre hébergement pour des vacances de rêve
-			</h1>
-			<p>
-				En plein centre ville ou en pleine nature
-			</p>
+			
 		</header>
+		
+		<div class="headline">
+				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+				<P>En plein centre ville ou en pleine nature</p>
+		</div>
 
-   </main>
+		<form method="post" action="#">
+			<div class="search">
+				<!---Icone-->
+				<div class="searchIcon">
+					<i class="fas fa-map-marker-alt"></i>
+				</div>
+				<!---Text zone-->
+				<input class="searchInputButton" type="search" placeholder="Marseille, France" />
+
+				<!----Boutons de recherche-->
+				<input class="searchButton" type="button" value="Rechercher" />
+				
+			</div>
+		</form>
+
+	</section>
 
 </body>
+
 </html>

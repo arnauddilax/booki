@@ -2,60 +2,99 @@
 <html lang="fr">
 
 <head>
+
+<!--Titre de la page-->
+
+	<title>Booki</title>
+
+<!-------- meta-------->
+
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki</title>
 
-   <link rel="stylesheet" type="text/css" href="css/style.css">
-   
-   <link rel="preconnect" href="https://fonts.googleapis.com" />
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet" />
+<!-------- css-------->
 
-   <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all"
+   	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<!-------- police-------->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+   	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet" />
+
+   <!-------- icones-------->
+
+  	<link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all"
 		rel="stylesheet" />
 	<link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all"
 		rel="stylesheet" />
 	<link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet" />
+
 </head>
 
 
 <body>
-	<section class="info-group">
-      <header>
-			<nav>
-				<img src="images/logo/Booki.png" alt="Booki">
 
-				<ul>
-					<li><a href="#hebergements">Hébergements</a></li>
-					<li><a href="#activites">Activités</a></li>
-				</ul>
+	<!--En tête-->
 
-			</nav>
-			
-		</header>
-		
-		<div class="headline">
-				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-				<P>En plein centre ville ou en pleine nature</p>
+	<header>
+
+		<div class=".headerLogo">
+			<img src="images/logo/Booki.png">
 		</div>
 
-		<form method="post" action="#">
+		<nav>
+			<div class=".headerMenu">	
+				<ul>
+				<li><a href="#">Hébergements</a></li>
+				<li><a href="#">Activités</a></li>
+				</ul>
+			</div>
+		</nav>
+
+	</header>
+
+	<!--Contenu-->
+	
+	<main>
+	
+	<section class="contenu">
+
+		<div class="infogroup">
+
+			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+			<p>En plein centre ville ou en pleine nature</p>
+			
+
+		<!---Formulaire de recherche-->
+			
+			<form method="post" action="#">
+
 			<div class="search">
+
 				<!---Icone-->
+
 				<div class="searchIcon">
 					<i class="fas fa-map-marker-alt"></i>
 				</div>
-				<!---Text zone-->
+				<!---zone de texte-->
+
 				<input class="searchInputButton" type="search" placeholder="Marseille, France" />
 
-				<!----Boutons de recherche-->
-				<input class="searchButton" type="button" value="Rechercher" />
-				
-			</div>
-		</form>
+				<!----Bouton de recherche-->
 
+				<input class="searchButton" type="button" value="Rechercher" />
+
+			</div>
+
+			</form>
+		
+		</div>
+		
 	</section>
+
+	</main>
 
 </body>
 

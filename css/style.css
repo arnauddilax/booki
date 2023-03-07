@@ -1,5 +1,215 @@
+/* Police Raleway */
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
 
 * {
     font-family: 'Raleway', sans-serif;
+}
+
+/* General */
+
+body  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    width: 1440px;
+    height: 1828.52px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background: #ffffff
+}
+
+/* Header */
+
+header {
+     width: 1440px;
+     height: 79px;
+     order: 0;
+     align-self: stretch;
+     flex-grow: 0;
+}
+
+.headerLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 10px;
+    position: absolute;
+    width: 121.09px;
+    height: 79px;
+    left: 30px;
+    top: 30px;
+}
+
+header img { 
+    width: 61px;
+    height: 19px;
+    flex: none;
+    order: 0;
+    flex-grow: 0; 
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.headerMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 25px;
+    gap: 68px;
+    position: absolute;
+    width: 328.6px;
+    height: 35px;
+    right: 0.31px;
+    top: 0px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 25px;
+    gap: 68px;
+    position: absolute;
+    width: 328.6px;
+    height: 35px;
+    right: 0.31px;
+    top: 0px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 68px;
+    width: 244px;
+    height: 35px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover {
+    color: #0065FC;
+    border-top: 2px #0065FC solid;
+}
+
+/* Contenu */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 50px;
+    gap: 35px;
+    width: 1440px;
+    height: 1719.52px;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.infoGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 35px;
+    isolation: isolate;
+    width: 1340px;
+    height: 281px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    width: 1340px;
+    height: 26px;
+    font-family: 'Raleway';
+    font-style: normal;
+    color: #000000
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/* formulaire de recherche */
+
+.search {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+    border-radius: 15px;
+    margin: 49px 0px 10px;
+}
+
+.searchIcon {
+    height: 50px;
+    width: 50px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0 0 15px;
+    align-self: flex-start;
+    color: black;
+}
+
+.searchInputButton {
+    height: 50px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f2f2f2;
+    padding-left: 5px;
+    height: 50px;
+}
+
+.searchButton {
+    width: 130px;
+    font-weight: 600;
+    background-color: #0065FC;
+    border: none;
+    padding: 0;
+    border-radius: 0 15px 15px 0;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 110%;
+    cursor: pointer;
+    flex-shrink: 0;
+    height: 50px;
+}
+
+.searchButton:hover {
+    background-color: #3586ff;
 }

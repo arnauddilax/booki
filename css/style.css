@@ -14,8 +14,8 @@ body  {
     align-items: flex-start;
     padding: 0px;
     gap: 30px;
-    width: 1440px;
-    height: 1828.52px;
+    max width: 1440px;
+    width: 100%
     left: 0px;
     right: 0px;
     top: 0px;
@@ -25,7 +25,6 @@ body  {
 /* Header */
 
 header {
-     width: 1440px;
      height: 79px;
      order: 0;
      align-self: stretch;
@@ -108,6 +107,7 @@ nav li a {
 nav li a:hover {
     color: #0065FC;
     border-top: 2px #0065FC solid;
+    padding-top: 20px;
 }
 
 /* Contenu */
@@ -118,8 +118,6 @@ main {
     align-items: flex-start;
     padding: 0px 50px;
     gap: 35px;
-    width: 1440px;
-    height: 1719.52px;
     order: 1;
     align-self: stretch;
     flex-grow: 0;
@@ -132,7 +130,6 @@ main {
     padding: 0px;
     gap: 35px;
     isolation: isolate;
-    width: 1340px;
     height: 281px;
     flex: none;
     order: 0;
@@ -144,7 +141,6 @@ h1 {
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-    width: 1340px;
     height: 26px;
     font-family: 'Raleway';
     font-style: normal;
@@ -182,17 +178,15 @@ p {
     color: black;
 }
 
-.searchInputButton {
-    height: 50px;
+.searchText {
+    height: 47 px;
+    font-weight: 700;
     font-size: 18px;
-    color: black;
-    font-weight: bold;
-    border: none;
+    line-height: 47px;
+    text-align: center;
     justify-content: center;
-    align-items: center;
     border: 1px solid #f2f2f2;
-    padding-left: 5px;
-    height: 50px;
+    color: black;
 }
 
 .searchButton {
@@ -212,4 +206,104 @@ p {
 
 .searchButton:hover {
     background-color: #3586ff;
+}
+
+
+/* filtres */
+
+.filters {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.textFilter {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4x 19px;
+}
+
+.filter span {
+    padding-left: 12px;
+}
+
+.filterList {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    height: 46px;
+    border: 2px solid #d9d9d9;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 25px;
+    font-family: 'Raleway';
+}
+
+.iconFilter {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 1px;
+    height: 46px;
+    background-color: #ffffff;
+}
+
+.iconFilter i {
+    margin: auto;
+    color: #0065FC;
+}
+
+.filterList span {
+    display: flex;
+    justify-content: center;
+}
+
+.filter:active {
+    background-color: #deebff;
+    color: #0065FC;
+}
+
+.filter:hover {
+    background-color: #d9d9d9;
+}
+
+.filter:hover i {
+    color: #0065fc;
+}
+
+.filter:hover .iconFilter {
+    background-color: #d9d9d9;
+}
+
+
+/* Info */
+
+.info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.iconInfo i {
+    width: auto;
+    height: auto;
+    font-size: 16;
+    color: #0065FC;
+    border: solid 1px #d9d9d9;
+    border-radius: 50%;
+    padding: 7px 11px 7px 11px;
+    margin-right: 20px;
 }

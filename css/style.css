@@ -14,12 +14,13 @@ body  {
     align-items: flex-start;
     padding: 0px;
     gap: 30px;
-    max width: 1440px;
-    width: 100%
+    max-width: 1440px;
+    width: 100%;
     left: 0px;
     right: 0px;
     top: 0px;
-    background: #ffffff
+    background: #ffffff;
+    font-family: 'Raleway', sans-serif;
 }
 
 /* Header */
@@ -29,6 +30,7 @@ header {
      order: 0;
      align-self: stretch;
      flex-grow: 0;
+     font-family: 'Raleway', sans-serif;
 }
 
 .headerLogo {
@@ -41,7 +43,7 @@ header {
     width: 121.09px;
     height: 79px;
     left: 30px;
-    top: 30px;
+    top: 0px;
 }
 
 header img { 
@@ -66,6 +68,7 @@ header img {
     height: 35px;
     right: 0.31px;
     top: 0px;
+    font-family: 'Raleway', sans-serif;
 }
 
 nav {
@@ -194,18 +197,23 @@ p {
     font-weight: 600;
     background-color: #0065FC;
     border: none;
-    padding: 0;
     border-radius: 0 15px 15px 0;
     color: #ffffff;
     font-weight: 600;
-    font-size: 110%;
-    cursor: pointer;
-    flex-shrink: 0;
+    font-size: 18px;
     height: 50px;
 }
 
 .searchButton:hover {
     background-color: #3586ff;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 17px;
+    font-family: 'Raleway';
+    font-style: normal;
+    color: #000000
 }
 
 
@@ -226,16 +234,14 @@ p {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    padding: 4x 19px;
-}
-
-.filter span {
-    padding-left: 12px;
+    padding: 0x 20px;
 }
 
 .filterList {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .filter {
@@ -249,6 +255,7 @@ p {
     padding-left: 20px;
     border-radius: 25px;
     font-family: 'Raleway';
+    font-weight: 700
 }
 
 .iconFilter {
@@ -263,11 +270,7 @@ p {
 .iconFilter i {
     margin: auto;
     color: #0065FC;
-}
-
-.filterList span {
-    display: flex;
-    justify-content: center;
+    margin-right: 10px;
 }
 
 .filter:active {
@@ -307,3 +310,202 @@ p {
     padding: 7px 11px 7px 11px;
     margin-right: 20px;
 }
+
+
+/*  Offres  */
+
+section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: top;
+}
+
+    /*  Offres Main  */
+
+.offersMain {
+    flex: 2;
+    background-color: #F2F2F2;
+    height: 611px;
+    border-radius: 15px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.blocTitle {
+    justify-content: space-between;
+    align-items: baseline;
+    margin-left: 15px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    height: 26px;
+    font-family: 'Raleway';
+    font-style: normal;
+    color: #000000
+}
+
+.blocMain {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+    padding: 0px;
+}
+
+.cardMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 90%;
+    height: 210px;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px #e8e8e8, -5px 5px 5px #e8e8e8;
+}
+
+.cardMain-image {
+    height: 108px;
+    border-radius: 15px 15px 0 0;
+}
+
+.textZone {
+    height: 83px;
+    margin-left: 10px;
+}
+
+.content-notation {
+    margin-left: 10px;
+}
+
+    /*  Offres Populaires (pop)  */
+
+.offersPop {
+    flex: 1;
+    background-color: #F2F2F2;
+    height: 611px;
+    border-radius: 15px;
+    margin-left: 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.blocTitle i {
+    font-size: 25px;
+    color: #0065FC;
+}
+
+.blocPop {
+    grid-gap: 10px;
+    width: 100%;
+    padding: 0px;
+}
+
+.cardPop {
+    padding: 5px;
+    background-color: white;
+    width: 90%;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #e8e8e8, -5px 5px 5px #e8e8e8;
+    margin: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.popCard-img {
+    width: 40%;
+    margin-right: 5px;
+    height: 100%;
+    border-radius: 15px 0px 0px 15px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.popCard-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.popCard-content {
+    display: flex;
+    flex-flow: column wrap;
+    width: 60%;
+    margin-left: 5px;
+    gap: 10px;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: top;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 17px;
+    font-family: 'Raleway';
+    font-style: normal;
+    color: #000000
+}
+
+.popContent-label p {
+    margin-top: 0px;
+    align-items: bottom;
+}
+
+.content-notation {
+    margin-left: 10px;
+}
+
+.cardPoP:hover {
+    box-shadow: 5px 5px 5px #dddddd, -5px 5px 5px #dddddd;
+    color: #0065fc;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.blocMain a, .blocPop a, section a {
+    color: black;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: #0065FC;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #dddddd, -5px 5px 5px #dddddd;
+}
+
+.offersPop a:hover {
+    color: #0065FC;
+    cursor: pointer;
+}
+
+.offersMain a:hover {
+    font-weight: 600;
+    color: #0065FC;
+}
+
+.blue {
+    color: #0065FC;
+}
+
+.grey {
+    color: #d9d9d9;
+}
+

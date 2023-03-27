@@ -14,13 +14,8 @@ body  {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
-    gap: 30px;
     max-width: 1440px;
     width: 100%;
-    left: 0px;
-    right: 0px;
-    top: 0px;
     background: #ffffff;
     font-family: 'Raleway', sans-serif;
 }
@@ -29,62 +24,26 @@ body  {
 /* Header */
 
 header {
-     height: 79px;
-     order: 0;
-     align-self: stretch;
-     flex-grow: 0;
-     font-family: 'Raleway', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 69px;   
 }
 
-.headerLogo {
+.header-logo {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 30px;
-    gap: 10px;
-    position: absolute;
-    width: 121.09px;
-    height: 79px;
-    left: 30px;
-    top: 0px;
+    margin-left: 50px;
+    margin-top: 30px;
 }
 
 header img { 
     width: 61px;
     height: 19px;
-    flex: none;
-    order: 0;
-    flex-grow: 0; 
-    position: absolute;
-    left: 30px;
-    top: 30px;
 }
 
-.headerMenu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px 25px;
-    gap: 68px;
-    position: absolute;
-    width: 328.6px;
-    height: 35px;
-    right: 0.31px;
-    top: 0px;
-    font-family: 'Raleway', sans-serif;
-}
-
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px 25px;
-    gap: 68px;
-    position: absolute;
-    width: 328.6px;
-    height: 35px;
-    right: 0.31px;
-    top: 0px;
+.header-menu {
+    line-height: 16px;
 }
 
 nav ul {
@@ -92,16 +51,10 @@ nav ul {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    padding: 0px;
-    gap: 68px;
-    width: 244px;
-    height: 35px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    gap: 69px;
 }
 
-ul {
+nav li {
     list-style-type: none;
 }
 

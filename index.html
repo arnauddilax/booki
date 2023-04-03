@@ -48,8 +48,8 @@
 		<nav>
 			<div class="header-menu">	
 				<ul>
-				<li><a href="#">Hébergements</a></li>
-				<li><a href="#">Activités</a></li>
+				<li><a href="#hebergement">Hébergements</a></li>
+				<li><a href="#activites">Activités</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -62,7 +62,7 @@
 	
 	<section class="contenu">
 
-		<div class="infogroup">
+		<div class="info-groupe">
 
 			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 			<p>En plein centre ville ou en pleine nature</p>
@@ -79,6 +79,7 @@
 				<div class="searchIcon">
 					<i class="fas fa-map-marker-alt"></i>
 				</div>
+				
 				<!---zone de texte-->
 
 				<input class="searchText" type="search" placeholder="Marseille, France" />
@@ -86,7 +87,8 @@
 				<!----Bouton de recherche-->
 
 				<button class="searchButton" type="button" value="Rechercher">
-				Rechercher
+				<span class="bouton-texte">Rechercher</span>
+				<span class="bouton-icone"><i class="fas fa-search"></i></span>
 				</button>
 
 			</div>
@@ -140,7 +142,7 @@
 				<div class="iconInfo">
 				<i class="fas fa-info"></i>
 				</div>
-				<p>Plus de 600 hébergements sont disponible dans cette zone</p>
+				<p>Plus de 600 hébergements sont disponibles dans cette zone</p>
 			
 			</div>
 
@@ -157,7 +159,7 @@
 
 		<div class="offersMain">
 
-			<div class="blocTitle flex">
+			<div class="blocTitle flex" id="hebergement">
 				<h2>Hébergements à Marseille</h2>
 			</div>
 
@@ -365,7 +367,7 @@
 
 <!---Activités Marseille-->
 
-	<section class="activite">
+	<section class="activite" id="activites">
 
 		<div class="titre-activite">
 			<h2>Activités à Marseille</h2>

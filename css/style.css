@@ -202,11 +202,13 @@ h3 {
 }
 
 .textFilter {
+    font-weight: 700;
+    font-size: 18px;
     display: flex;
     flex-flow: row wrap;
     justify-content: left;
-    align-items: left;
-    padding: 0x 20px;
+    align-items: center;
+    margin-bottom: 6px;
     margin-right: 20px;
 }
 
@@ -219,6 +221,7 @@ h3 {
 }
 
 .filter {
+    font-size: 17px;
     display: flex;
     align-items: center;
     height: 46px;
@@ -359,7 +362,8 @@ h2 {
     margin-left: 10px;
 }
 
-    /*  Offres Populaires (pop)  */
+
+/*  Offres Populaires (pop)  */
 
 .offersPop {
     background-color: #F2F2F2;
@@ -432,7 +436,8 @@ h2 {
 
 h3 {
     font-weight: 700;
-    font-size: 17px;
+    font-size: 16px;
+    margin: 0;
     font-family: 'Raleway';
     font-style: normal;
     color: #000000
@@ -551,7 +556,8 @@ h3 {
 /* Footer */
 
 footer {
-    padding: 40px 20px 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: #f2f2f2;
     width: 100%;
 }
@@ -559,27 +565,25 @@ footer {
 .bas-de-page {
     display: flex;
     flex-flow: row;
-    display: flex;
     align-items: flex-start;
 }
 
 .a-propos {
-    display: flex;
+    width: 33.3%;
     flex-direction: column;
-    margin-right: 20%;
+    padding-left: 20px;
 }
 
 .a-propos p {
-    height: 22px;
     font-weight: 500;
     font-size: 17px;
     margin: 0px;
 }
 
 .nos-hebergements {
-    display: flex;
+    width: 33.3%;
     flex-direction: column;
-    margin-right: 20%;
+    padding-left: 20px;
 }
 
 .nos-hebergements p {
@@ -590,8 +594,9 @@ footer {
 }
 
 .assistance {
-    display: flex;
+    width: 33.3%;
     flex-direction: column;
+    padding-left: 20px;
 }
 
 .assistance p {
@@ -618,7 +623,7 @@ footer a:hover {
 /*---Pour les tablettes---*/
 
 
-@media screen and (min-width: 769px) and (max-width: 1025px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
 
     .filters {
@@ -667,74 +672,14 @@ footer a:hover {
         justify-content: center;
     }
 
-    .a-propos, .nos-hebergements {
-        margin-right: 10%;
-    }
 
 }
-    
 
-/*---Pour les petits écrans et les fenetres réduites---*/
-
-@media screen and (min-width: 1025px) and (max-width: 1250px) {
-
-    .filters {
-        display: flex;
-        flex-flow: column;
-    }
-
-    .offersMain {
-        width: 100%;
-        margin-bottom: 30px;
-        margin-right: 0px;
-    }
-
-    .offersPop {
-        align-items: left;
-        width: 100%;
-        height: 250px;
-    }
-    
-    .blocPop {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
-        width: 100%;
-    }
-
-    .bloc-activite {
-        width: 97%;
-        height: 250px;
-        display: flex;
-        flex-flow: row;
-        justify-content: space-between;
-        margin-top: 15px;
-    }
-
-    .image-activite {
-        height: 200px;
-        align-items: top;
-    }
-
-    .legende-activite h3 {
-        height: 22px;
-        font-weight: 700;
-        font-size: 17px;
-        margin-top: 5px;
-        justify-content: center;
-    }
-
-    .a-propos, .nos-hebergement {
-        margin-right: 10%;
-    }
-
-
-}
 
 /*---Pour les mobiles---*/
 
 
-@media screen and (min-width: 374px) and (max-width: 768px) {
+@media screen and (min-width: 374px) and (max-width: 767px) {
 
     body  {
         display: flex;
@@ -742,7 +687,6 @@ footer a:hover {
         align-items: flex-start;
         padding-left: 0px;
         margin-left: 0px;
-        max-width: 376px;
     }
     
     
@@ -753,7 +697,8 @@ footer a:hover {
         display: flex;
         flex-direction: column;
         margin-bottom: 30px;
-        width: 100%; 
+        width: 100%;
+        margin-bottom: 30px;
     }
     
     .header-logo {
@@ -772,13 +717,12 @@ footer a:hover {
     }
     
     nav ul {
-        width: 375px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         margin-right: 0px;
-        padding-left: 0px;
+        padding: 0px;
         text-align: center;
         gap: 0px;
     }
@@ -787,36 +731,20 @@ footer a:hover {
         list-style-type: none;
         width: 50%;
         align-items: top;
-        line-height: 50px;
+        line-height: 0px;
         justify-content: top;
+        border-bottom: 2px solid transparent;
     }
     
-    nav li a {
-        text-decoration: none;
-        color: black;
-    }
-    
-    li:hover {
-        color: #0065FC;
-        border-bottom: 2px #0065FC solid;
-        padding-bottom: 0px;
-    }
-
-    nav li a:hover {
-        color: #0065FC;
-        border-top: none;
-        padding-top: none;
-    }
-    
-    
-    /* Contenu Mobile*/
+   /* Contenu Mobile*/
     
     main {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 0px 10px;
+        padding: 0px 0px;
         gap: 0px;
+        margin: 0;
     }
     
     .contenu {
@@ -826,6 +754,8 @@ footer a:hover {
         align-items: left;
         flex-direction: column;
         width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     
     .info-groupe {
@@ -846,15 +776,7 @@ footer a:hover {
         line-height: 18px;
     }
       
-    .bouton-texte {
-        align-items: center;
-        display: none;
-    }
-    
-    .bouton-icone {
-        align-items: center;
-        display: flex;   
-    }  
+ 
 
     /* Info Mobile */
 
@@ -863,7 +785,68 @@ footer a:hover {
         flex-flow: row;
         justify-content: left;
         align-items: center;
+        margin-bottom: 35px;
+        width: 100%;
 }
+
+    /* formulaire de recherche */
+
+.search {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 50px;
+    border-radius: 15px;
+    margin: 49px 0px 10px;
+    width: 100%;
+}
+
+.searchIcon {
+    display: flex;
+    height: 50px;
+    padding: 0px 20px 0px 20px;
+    background-color: #F2F2F2;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0 0 15px;
+    color: black;
+    vertical-align: middle;
+}
+
+.searchText {
+    padding: 0px 20px 0px 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 47px;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid #f2f2f2;
+    color: black;
+}
+
+.searchButton {
+    padding: 0px 20px 0px 20px;
+    font-weight: 600;
+    background-color: #0065FC;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    height: 50px;
+}
+
+.bouton-texte {
+    align-items: center;
+    display: none;
+}
+
+.bouton-icone {
+    align-items: center;
+    display: flex;   
+}  
+
 
     /* Offres Mobile */
 
@@ -879,8 +862,8 @@ footer a:hover {
     .offersPop {
         background-color: #f2f2f2;
         width: 100%;
-        border-radius: 15px;
-        margin-left: 0px;
+        border-radius: 0;
+        margin: 0;
         padding: 0;
         display: flex;
         flex-direction: column;
@@ -888,56 +871,70 @@ footer a:hover {
         margin-bottom: 20px;
 }
 
-    
-
+   
     .offersMain {
-        background-color: #F2F2F2;
+        background-color: #ffffff;
         width: 100%;
         border-radius: 15px;
         display: flex;
-        
         flex-direction: column;
         padding-right: 0;
 }
 
-.blocTitle {
-    justify-content: space-between;
-    align-items: baseline;
-    margin-left: 15px;
+    .blocTitle {
+        justify-content: space-between;
+        align-items: baseline;
+        margin-left: 15px;
 }
 
-.blocMain {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 0px;
-    width: 100%;
-    padding: 0px;
+    .blocMain {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0px;
+        width: 100%;
+        padding: 0px;
 }
 
-.cardMain {
+    .cardMain {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        width: 90%;
+        height: 210px;
+        border-radius: 20px;
+       
+        box-shadow: 5px 5px 5px #e8e8e8, -5px 5px 5px #e8e8e8;
+}
+
+    .cardMain-image {
+        height: 108px;
+        border-radius: 15px 15px 0 0;
+}
+
+    .textZone {
+        height: 83px;
+        margin-left: 10px;
+}
+
+    .content-notation {
+        margin-left: 10px;
+}
+
+.bloc-activite {
+    width: 97%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: white;
-    width: 90%;
-    height: 210px;
-    border-radius: 20px;
-    padding: 5px;
-    margin: 10px;
-    box-shadow: 5px 5px 5px #e8e8e8, -5px 5px 5px #e8e8e8;
+    flex-flow: column;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 100%;
 }
 
-.cardMain-image {
-    height: 108px;
-    border-radius: 15px 15px 0 0;
+
+.bas-de-page {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
 }
 
-.textZone {
-    height: 83px;
-    margin-left: 10px;
-}
-
-.content-notation {
-    margin-left: 10px;
-}
 }
